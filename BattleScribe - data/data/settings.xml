@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<configuration battleScribeVersion="2.00" xmlns="http://www.battlescribe.net/schema/configSchema">
-  <settings/>
-  <dataIndexUrls>
-    <dataIndexUrl>http://battlescribedata.appspot.com/repos/wh40k/index.bsi</dataIndexUrl>
-    <dataIndexUrl>http://battlescribedata.appspot.com/repos/horus-heresy/index.bsi</dataIndexUrl>
-  </dataIndexUrls>
-  <favouriteSets/>
-</configuration>
