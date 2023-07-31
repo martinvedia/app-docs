@@ -5,29 +5,49 @@ Gryffindor = 0
 Ravenclaw = 0
 Hufflepuff = 0
 Slytherin = 0
-
-print("Q1) Do you like Dawn or Dusk?")
-print("    1) Dawn")
-print("    2) Dusk")
-
-q1_response = int(input("Enter you Q1 answer: "))
-
-print("Q2) When I’m dead, I want people to remember me as:")
-print("    1) The Good")
-print("    2) The Great")
-print("    3) The Wise")
-print("    4) The Bold")
-
-q2_response = int(input("Enter you Q2 answer: "))
+q1_response = 0
+q2_response = 0
+q3_response = 0
+q4_response = 0
 
 
-print("Q3) Which kind of instrument most pleases your ear?")
-print("    1) The violin")
-print("    2) The trumpet")
-print("    3) The piano")
-print("    4) The drum")
+# Question 1
+while q1_response != 1 and q1_response != 2:
+    print("Q1) Do you like Dawn or Dusk?")
+    print("    1) Dawn")
+    print("    2) Dusk")
 
-q3_response = int(input("Enter you Q3 answer: "))
+    q1_response = int(input("Enter you Q1 answer: "))
+
+    if q1_response != 1 and q1_response != 2:
+        print ("Invalid input")
+
+# Question 2
+while q2_response != 1 and q2_response != 2 and q2_response != 3 and q2_response != 4:
+    print("Q2) When I’m dead, I want people to remember me as:")
+    print("    1) The Good")
+    print("    2) The Great")
+    print("    3) The Wise")
+    print("    4) The Bold")
+
+    q2_response = int(input("Enter you Q2 answer: "))
+
+    if q2_response != 1 and q2_response != 2 and q2_response != 3 and q2_response != 4:
+        print ("Invalid input")
+
+# Question 3
+while q3_response != 1 and q3_response != 2 and q3_response != 3 and q3_response != 4:
+    print("Q3) Which kind of instrument most pleases your ear?")
+    print("    1) The violin")
+    print("    2) The trumpet")
+    print("    3) The piano")
+    print("    4) The drum")
+
+    q3_response = int(input("Enter you Q3 answer: "))
+
+    if q3_response != 1 and q3_response != 2 and q3_response != 3 and q3_response != 4:
+        print ("Invalid input")
+
 
 # Question 1 response calc:
 if q1_response == 1:
