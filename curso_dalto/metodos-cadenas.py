@@ -9,7 +9,7 @@ print('#########################################################################
 ### Metodos ###
 # Los metodos se invocan como <objeto>.metodo()
 # En este caso usamos 'upper' que convierte un string a mayusculas y existen otros como:
-    # upper -> Conviete a mayusculas
+    # upper -> Convierte a mayusculas
     # lower -> Convierte a minuscualas
     # capitalize -> Convierte todo a minusculas y la primer retra a mayusculas
     # find -> Devuelve la primer posición encontrada del valor a buscar, sino, devuelve -1
