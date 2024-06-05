@@ -4,6 +4,8 @@ Apellido: Doyhenart
 
 TP Recursos Inhumanos CRUD
 """""
+import csv
+
 def crear_empleado(id: int, nombre: str, apellido: str, dni: int, puesto: str, salario: int) -> dict:
     diccionario_empleado = {
         "ID": id,
@@ -230,6 +232,23 @@ def ordenar_empleados(lista_empleados: list[dict]):
                             case "2":
                                 ordenar_lista_descendente(lista_empleados, "Salario")
             break
+
+
+def inicializar_desde_csv(lista_empleados: list[dict], nombre_archivo_csv):
+    
+    with open(nombre_archivo_csv, newline='') as archivo:
+        lector_csv = csv.reader(archivo)
+    
+        for fila in lector_csv:
+            id_empleado = fila[0]
+            nombre = fila[1]
+            apellido = fila[2]
+            dni = fila[3]
+            puesto = fila[4]
+            salario = fila[5]
+            empleado = crear_empleado(id_empleado, nombre, apellido, dni, puesto, salario)
+            
+            lista_empleados.append(empleado)
     
 ############################################################################################################################
 ##                                         ARCHIVOS                                                                       ##

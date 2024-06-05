@@ -14,10 +14,10 @@ def elegir_opcion():
     return opcion
 
 lista_empleados = []
-
-system("cls")
+archivo_csv = 'Empleados.csv'
 
 while True:
+    inicializar_desde_csv(lista_empleados, archivo_csv)
     opcion = elegir_opcion()
     match opcion:
         case "1":
